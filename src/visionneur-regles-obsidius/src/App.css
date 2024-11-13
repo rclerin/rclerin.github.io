@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+label {
+  margin-right: 1%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select {
+  margin-left: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  margin-left: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item {
+  margin: 1%;
+}
+
+.div-margin {
+  margin: 1%;
+}
+
+.div-margin-top-bot {
+  margin: 1% 0%;
+}
+
+.marginBot {
+  margin-bottom: 1%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexCol {
   display: flex;
   flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.tableTopRow {
+  padding: 5px 5px 5px 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.tableHeaderCell {
+  display: table-cell;
+  text-align: justify;
+  padding: 5px 5px 0;
+  background-color: rgb(240, 240, 240);
+  font-weight: bold;
+}
+
+.tableCell {
+  display: table-cell;
+  padding: 5px;
+}
+
+.tableSeparator {
+  padding-bottom: 20px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+  margin: 0 10em 5em;
+  border: 2px solid black;
+}
+
+.gridItem {
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0.2em 0.2em;
+  border: 1px solid black;
+  min-height: 1.5em;
 }
 
-.App-link {
-  color: #61dafb;
+.gridItemLarge {
+  padding: 0.1em 0.1em;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gridItemDesc {
+  min-height: 8em;
 }

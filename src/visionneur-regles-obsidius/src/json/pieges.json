@@ -1,0 +1,200 @@
+[
+  {
+    "piege_id": 1,
+    "nom": "Alarme",
+    "effet": "Oblige la victime a crier 'Alarme' tres fort pour simuler le bruit d'une vrai alarme pendant la durée du piège à intervalle de 3 secondes.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "1m x 1m",
+    "duree": "1 minute",
+    "defense": "Dextérité mineure",
+    "lieu": "N'importe où"
+  },
+  {
+    "piege_id": 2,
+    "nom": "Aveuglement",
+    "effet": "Aveugle les cibles pour la durée du piège. Lorsque aveuglé, un joueur ferme ses yeux et n'a pas le droit de les ouvrir, à moins de posséder un pouvoir lui permettant de le faire.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "1m x 1m ou un objet",
+    "duree": "30 secondes",
+    "defense": "Endurance mineure",
+    "lieu": "N'importe où"
+  },
+  {
+    "piege_id": 3,
+    "nom": "Aveuglement de groupe",
+    "effet": "Aveugle les cibles pour la durée du piège. Lorsque aveuglé, un joueur ferme ses yeux et n'a pas le droit de les ouvrir, à moins de posséder un pouvoir lui permettant de le faire.",
+    "nb_cibles": 3,
+    "type_piege": "",
+    "grandeur": "5m x 5m ou un objet",
+    "duree": "30 secondes",
+    "defense": "Endurance majeure",
+    "lieu": "N'importe où"
+  },
+  {
+    "piege_id": 4,
+    "nom": "Aveuglement de longue durée",
+    "effet": "Aveugle les cibles pour la durée du piège. Si la défense est réussi, la cible est aveugler seulement 30 secondes.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "5m x 5m ou un objet",
+    "duree": "30 secondes",
+    "defense": "Endurance ultime",
+    "lieu": "N'importe où"
+  },
+  {
+    "piege_id": 5,
+    "nom": "Brise-genou",
+    "effet": "Inflige 1 point de dégâts à la(les) cible(s). Celle-ci ne peut plus courir pendant la durée du piège. Effet de ralentit.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "1m x 1m",
+    "duree": "1 minute",
+    "defense": "Dextérité mineure",
+    "lieu": "Au sol, n'importe où"
+  },
+  {
+    "piege_id": 6,
+    "nom": "Brise-genou de masse",
+    "effet": "Inflige 1 point de dégâts aux cibles. Celles-ci ne peuvent plus courir pendant la durée du piège. Effet de ralentit.",
+    "nb_cibles": 3,
+    "type_piege": "",
+    "grandeur": "3m x 3m",
+    "duree": "1 minute",
+    "defense": "Dextérité majeure",
+    "lieu": "Au sol, n'importe où"
+  },
+  {
+    "piege_id": 7,
+    "nom": "Brise-genou ultime",
+    "effet": "Inflige 3 points de dégâts aux cibles. Celles-ci ne peuvent plus courir pendant la durée du piège. Effet de ralentit.",
+    "nb_cibles": 5,
+    "type_piege": "",
+    "grandeur": "5m x 5m",
+    "duree": "1 minute",
+    "defense": "Dextérité ultime",
+    "lieu": "Au sol, n'importe où"
+  },
+  {
+    "piege_id": 8,
+    "nom": "Étourdissement",
+    "effet": "Inflige 1 de dégât et rend la cible 'sonné' pour la durée du piège. Lorsqu'un personnage subit l'effet 'sonné', il doit se mettre à genou pour 30 secondes et il ne peut que parer les coups avec ses armes ou bouclier. Il ne peut donner aucun coup ni faire de sort. Pendant qu'il est sonné, il ne peut pas utiliser de défense 'dextérité' Une personne avec le pouvoir 'Stabilité' peut ignorer l'effet 'sonné'.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "3m x 3m",
+    "duree": "30 secondes",
+    "defense": "Endurance majeure",
+    "lieu": "Au sol, n'importe où"
+  },
+  {
+    "piege_id": 9,
+    "nom": "Étourdissement de masse",
+    "effet": "Inflige 2 de dégât et rend les cibles 'sonné' pour la durée du piège. Lorsqu'un personnage subit l'effet 'sonné', il doit se mettre à genou pour 30 secondes et il ne peut que parer les coups avec ses armes ou bouclier. Il ne peut donner aucun coup ni faire de sort. Pendant qu'il est sonné, il ne peut pas utiliser de défense 'dextérité' Une personne avec le pouvoir 'Stabilité' peut ignorer l'effet 'sonné'.",
+    "nb_cibles": 3,
+    "type_piege": "",
+    "grandeur": "5m x 5m",
+    "duree": "30 secondes",
+    "defense": "Endurance ultime",
+    "lieu": "Au sol, n'importe où"
+  },
+  {
+    "piege_id": 10,
+    "nom": "Fléchette de poison",
+    "effet": "Le piège inflige 2 de dégâts et empoisonne celui qui ouvre l'objet. Le poseur de piège doit avoir en main une fiole de poison qui sera détruite à la création du piège. Les dégats et résistance sont ceux du poison utilisé.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "1m x 1m ou un objet",
+    "duree": "Instant",
+    "defense": "Endurance majeure",
+    "lieu": "Sur un objet renfermable seulement"
+  },
+  {
+    "piege_id": 11,
+    "nom": "Lame transpercente",
+    "effet": "Inflige 3 dégâts sans armure à la cible.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "3m x 3m",
+    "duree": "Instant",
+    "defense": "Dextérité majeure",
+    "lieu": "Au sol, n'importe où"
+  },
+  {
+    "piege_id": 12,
+    "nom": "Lames transpercentes multiples",
+    "effet": "Inflige 5 dégâts sans armure aux cibles.",
+    "nb_cibles": 3,
+    "type_piege": "",
+    "grandeur": "5m x 5m",
+    "duree": "Instant",
+    "defense": "Dextérité ultime",
+    "lieu": "Au sol, n'importe où"
+  },
+  {
+    "piege_id": 13,
+    "nom": "Projection",
+    "effet": "Inflige 1 dégât à la cible. Projete la cible à 3m et la fait tomber au sol. 'Stabilité' permet d'ignorer cet effet. Celui qui pose le piège decide de la direction au moment où le piège est posé.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "1m x 1m ou un objet",
+    "duree": "Instant",
+    "defense": "Endurance mineure",
+    "lieu": "N'importe où"
+  },
+  {
+    "piege_id": 14,
+    "nom": "Projection de masse",
+    "effet": "Inflige 2 dégât aux cibles. Projete les cibles à 3m et les font tomber au sol. 'Stabilité' permet d'ignorer cet effet. Celui qui pose le piège decide de la direction au moment où le piège est posé.",
+    "nb_cibles": 4,
+    "type_piege": "",
+    "grandeur": "5m x 5m",
+    "duree": "Instant",
+    "defense": "Endurance majeure",
+    "lieu": "N'importe où"
+  },
+  {
+    "piege_id": 15,
+    "nom": "Projection étourdissante",
+    "effet": "Inflige 3 dégât à la cible. Projete les cibles à 3m et leur inflige l'effet 'sonné' pour la durée du piège. 'Stabilité' permet d'ignorer cet effet. Celui qui pose le piège decide de la direction au moment où le piège est posé. Pendant qu'il est sonné, une personne ne peut pas utiliser de défense 'dextérité.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "3m x 3m",
+    "duree": "30 secondes",
+    "defense": "Endurance ultime",
+    "lieu": "Au sol, seulement en nature"
+  },
+  {
+    "piege_id": 16,
+    "nom": "Trou épineux",
+    "effet": "Inflige 2 dégâts à la cible.",
+    "nb_cibles": 1,
+    "type_piege": "",
+    "grandeur": "1m x 1m",
+    "duree": "Instant",
+    "defense": "Dextérité mineure",
+    "lieu": "Au sol, seulement en nature"
+  },
+  {
+    "piege_id": 17,
+    "nom": "Trou large épineux",
+    "effet": "Inflige 2 dégâts aux cibles.",
+    "nb_cibles": 3,
+    "type_piege": "",
+    "grandeur": "3m x 3m",
+    "duree": "Instant",
+    "defense": "Dextérité majeure",
+    "lieu": "Au sol, seulement en nature"
+  },
+  {
+    "piege_id": 18,
+    "nom": "Trou immense épineux",
+    "effet": "Inflige 4 dégâts aux cibles.",
+    "nb_cibles": 5,
+    "type_piege": "",
+    "grandeur": "5m x 5m",
+    "duree": "Instant",
+    "defense": "Dextérité ultime",
+    "lieu": "Au sol, seulement en nature"
+  }
+]
