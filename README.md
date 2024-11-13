@@ -1,4 +1,4 @@
-# Character Creator Tool for Vestiges Obsidius
+# Visionneur de règles pour les Vestiges d'Obsidius
 
 Ceci est un outil pour les règles pour le Grandeur Nature (GN) nommé les Vestiges d'Obsidius que je crée comme projet personnel.
 
