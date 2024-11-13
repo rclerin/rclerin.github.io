@@ -27,7 +27,7 @@ const PouvoirsGrid = () => {
     useEffect(() => {
         document.title = "Liste des pouvoirs";
         fetchPouvoirsUni();
-    })
+    }, [])
 
 
     const handleSelectChange = (e) => {
@@ -69,9 +69,8 @@ const PouvoirsGrid = () => {
                     <option value={12}>Voleur</option>
                     <option value={13}>Warlock</option>
                 </select>
-            </div>
-
-            <PouvoirsGridFormatter tableData={gridData} />
+            </div>            
+            <PouvoirsGridFormatter tableData={gridData}/>
         </div>
     );
 }
