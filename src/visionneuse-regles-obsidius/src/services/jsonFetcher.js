@@ -11,11 +11,14 @@ import pouvoirsPretre from '../json/pouvoirsPretre.json';
 import pouvoirsRanger from '../json/pouvoirsRanger.json';
 import pouvoirsVoleur from '../json/pouvoirsVoleur.json';
 import pouvoirsWarlock from '../json/pouvoirsWarlock.json';
+import sortsArcane from '../json/sortsArcanes.json';
+import sortsDivin from '../json/sortsDivins.json';
+import sortsDruidique from '../json/sortsDruidiques.json';
+import sortsSorcellerie from '../json/sortsSorcellerie.json';
 
 export async function getPouvoirsUniversels() {
     return pouvoirsUniversel;
 }
-
 export async function getPouvoirsExclusifs() {
     return pouvoirsExclusif;
 }
@@ -47,4 +50,17 @@ export async function getPouvoirsParClasse(classeId) {
         default:
             return pouvoirsUniversel;
     }
+}
+
+export async function getSortsArcane() {
+    return sortsArcane;
+}
+export async function getSortsDivin() {
+    return sortsDivin;
+}
+export async function getSortsDruidique() {
+    return sortsDruidique;
+}
+export async function getSortsSorcellerie() {
+    return sortsSorcellerie;
 }

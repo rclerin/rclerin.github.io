@@ -10,6 +10,9 @@ function NavBar() {
                 <span className="nav-item">
                     <Link to={"/pouvoirs"}>Liste de pouvoirs</Link>
                 </span>
+                <span className="nav-item">
+                    <Link to={"/sorts"}>Liste de sorts</Link>
+                </span>
             </nav>
         </>
     )

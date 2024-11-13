@@ -82,10 +82,13 @@ input {
 
 .gridItemLarge {
   padding: 0.1em 0.1em;
-  font-weight: bold;
   font-size: 1.5em;
 }
 
 .gridItemDesc {
   min-height: 8em;
+}
+
+.gridItemBold {
+  font-weight: bold;
 }
