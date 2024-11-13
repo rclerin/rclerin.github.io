@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
 import { PouvoirsGridFormatter } from "./pouvoirsGridFormatter.js";
 import { getPouvoirsExclusifs, getPouvoirsUniversels, getPouvoirsParClasse } from "../services/jsonFetcher.js";
-import NavBar from './navBar.js';
 
-const Pouvoirs = () => {
+const PouvoirsGrid = () => {
     const [gridData, setGridData] = useState([]);
     const [choixListe, setChoixListe] = useState("100");
+
+    const filterPouvoirs = (pouvoirsEntrants) => {
+        const filteredPouvoirs = pouvoirsEntrants.sort((a, b) => a.nom.toLowerCase() < b.nom.toLowerCase());
+        setGridData(filteredPouvoirs);
+    }
 
     const fetchPouvoirsUni = () => {
         getPouvoirsUniversels().then(x => filterPouvoirs(x));
@@ -18,18 +22,12 @@ const Pouvoirs = () => {
     const fetchPouvoirsClasse = (classeId) => {
         getPouvoirsParClasse(classeId).then(x => filterPouvoirs(x));
     }
-    
-    const filterPouvoirs = (pouvoirsEntrants) => {
-        const filteredPouvoirs = pouvoirsEntrants.sort((a, b) => a.nom.toLowerCase() < b.nom.toLowerCase());
-        setGridData(filteredPouvoirs);
-    }
-
 
     // Au chargement de la page
     useEffect(() => {
         document.title = "Liste des pouvoirs";
         fetchPouvoirsUni();
-    }, [])
+    })
 
 
     const handleSelectChange = (e) => {
@@ -54,9 +52,6 @@ const Pouvoirs = () => {
 
     return (
         <div>
-            <div>
-                <NavBar />
-            </div>
             <div style={{ padding: "1em", textAlign: "center", fontSize: "large" }}>
                 <label>Choix de liste de pouvoirs:</label>
                 <select value={choixListe} onChange={handleSelectChange} name="liste-pouvoir-select">
@@ -81,4 +76,4 @@ const Pouvoirs = () => {
     );
 }
 
-export default Pouvoirs;
+export default PouvoirsGrid;

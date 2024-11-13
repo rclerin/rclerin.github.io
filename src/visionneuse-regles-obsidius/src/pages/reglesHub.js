@@ -1,7 +1,11 @@
 import '../App.css';
+import { useEffect } from "react";
 import NavBar from "../component/navBar"
 
 export default function ReglesHub() {
+    useEffect(() => {
+        document.title = "Visionneuse de règles des Vestiges d'Obsidius";
+    })
     return (
         <main>
             <div>

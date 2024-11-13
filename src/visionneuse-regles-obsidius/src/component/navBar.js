@@ -5,7 +5,7 @@ function NavBar() {
         <>
             <nav className="div-margin">
                 <span className="nav-item">
-                    <Link to={"/"}>Visionneur de règles</Link>
+                    <Link to={"/"}>Accueil</Link>
                 </span>
                 <span className="nav-item">
                     <Link to={"/pouvoirs"}>Liste de pouvoirs</Link>

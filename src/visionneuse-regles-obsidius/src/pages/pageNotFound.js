@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import NavBar from "../component/navBar"
 
 export default function PageNotFound() {
+    useEffect(() => {
+        document.title = "Page introuvable";
+    })
     return (
         <main>
             <div>
