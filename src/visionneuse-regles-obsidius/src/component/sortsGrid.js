@@ -32,6 +32,7 @@ const SortsGrid = () => {
     useEffect(() => {
         document.title = "Liste des sorts";
         fetchSortsArcane();
+        // eslint-disable-next-line
     }, [])
 
     const handleSelectChange = (e) => {
@@ -61,8 +62,8 @@ const SortsGrid = () => {
     }
 
     return (
-        <div>
-            <div style={{ padding: "1em", textAlign: "center", fontSize: "large" }}>
+        <main>
+            <div className='choix-liste'>
                 <label>Choix de liste de sorts:</label>
                 <select value={choixListe} onChange={handleSelectChange} name="liste-sorts-select">
                     <option value={1}>Arcane</option>
@@ -72,7 +73,7 @@ const SortsGrid = () => {
                 </select>
             </div>
             <SortsGridFormatter tableData={gridData} />
-        </div>
+        </main>
     )
 }
 

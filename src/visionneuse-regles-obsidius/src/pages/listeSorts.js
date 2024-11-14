@@ -3,9 +3,9 @@ import SortsGrid from "../component/sortsGrid";
 
 export default function ListeSorts() {
     return (
-        <main>
+        <div>
             <NavBar />
             <SortsGrid />
-        </main>
+        </div>
     )
 }

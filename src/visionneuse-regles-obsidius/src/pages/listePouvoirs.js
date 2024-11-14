@@ -3,9 +3,9 @@ import PouvoirsGrid from "../component/pouvoirsGrid";
 
 export default function ListePouvoirs() {
     return (
-        <main>
+        <div>
             <NavBar />
             <PouvoirsGrid />
-        </main>
+        </div>
     )
 }

@@ -27,6 +27,7 @@ const PouvoirsGrid = () => {
     useEffect(() => {
         document.title = "Liste des pouvoirs";
         fetchPouvoirsUni();
+        // eslint-disable-next-line
     }, [])
 
 
