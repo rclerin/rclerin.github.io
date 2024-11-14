@@ -13,8 +13,8 @@ export function SortIndividuel(data) {
             </div>
 
             <div className="row">
-                <div className="col-7 col-xs-12 bold">Description</div>
-                <div className="col-2 col-xs-5 bold">Type de bonus :</div>
+                <div className="col-6 col-xs-12 bold">Description</div>
+                <div className="col-3 col-xs-5 bold">Type de bonus :</div>
                 <div className="col-3 col-xs-7">{!data.data.type_bonus ? "-" : data.data.type_bonus}</div>
             </div>
             <div className="row">
