@@ -52,8 +52,8 @@ const PouvoirsGrid = () => {
     }
 
     return (
-        <div>
-            <div style={{ padding: "1em", textAlign: "center", fontSize: "large" }}>
+        <main>
+            <div className='choix-liste'>
                 <label>Choix de liste de pouvoirs:</label>
                 <select value={choixListe} onChange={handleSelectChange} name="liste-pouvoir-select">
                     <option value={100}>Universels</option>
@@ -72,7 +72,7 @@ const PouvoirsGrid = () => {
                 </select>
             </div>            
             <PouvoirsGridFormatter tableData={gridData}/>
-        </div>
+        </main>
     );
 }
 
