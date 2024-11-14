@@ -60,14 +60,14 @@ export function PouvoirIndividuel(data) {
             <div className="row">
                 <div className="col-5 col-xs-6 bold">Annulé par</div>
                 <div className="col-3 col-xs-6 bold">Composante matérielle requise</div>
-                <div className="col-3 col-xs-8 bold hidden-xs">Catégorie de pouvoir</div>
-                <div className="col-1 col-xs-4 bold hidden-xs">Répétition</div>
+                <div className="col-2 col-xs-8 bold hidden-xs">Catégorie de pouvoir</div>
+                <div className="col-2 col-xs-4 bold hidden-xs">Répétition</div>
             </div>
             <div className="row">
                 <div className="col-5 col-xs-6">{!data.data.annule_par ? "-" : data.data.annule_par}</div>
                 <div className="col-3 col-xs-6">{!data.data.materiel_requis ? "-" : (data.data.materiel_requis ? "oui" : "non")}</div>
-                <div className="col-3 col-xs-8 hidden-xs">{!data.data.categorie ? "-" : data.data.categorie}</div>
-                <div className="col-1 col-xs-4 hidden-xs">{data.data.repetition ? "oui" : "non"}</div>
+                <div className="col-2 col-xs-8 hidden-xs">{!data.data.categorie ? "-" : data.data.categorie}</div>
+                <div className="col-2 col-xs-4 hidden-xs">{data.data.repetition ? "oui" : "non"}</div>
             </div>
             <div className="row hidden-desktop">
                 <div className="col-6 col-xs-8 bold">Catégorie de pouvoir</div>
