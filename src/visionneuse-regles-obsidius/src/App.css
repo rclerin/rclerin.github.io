@@ -79,6 +79,7 @@ input {
   gap: 1px;
   margin: 0 10em 5em;
   border: 2px solid black;
+  break-inside: avoid-page;
 }
 
 .gridItem {
@@ -267,6 +268,12 @@ input {
     width: 100%;
   }
     .responsive-grid-container {
-      margin: 0 10em 3em;
+      margin: 0 2em 3em;
     }
+}
+
+@media print {
+  .responsive-grid-container {
+    break-inside: avoid-page;
+  }
 }
