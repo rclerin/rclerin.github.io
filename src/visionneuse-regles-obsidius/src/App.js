@@ -3,6 +3,7 @@ import ReglesHub from './pages/reglesHub';
 import PageNotFound from './pages/pageNotFound';
 import ListePouvoirs from './pages/listePouvoirs';
 import ListeSorts from './pages/listeSorts';
+import ListePouvoirsPrint from './pages/listePouvoirsPrint';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<ReglesHub />} />
         <Route path='/*' element={<PageNotFound />}></Route>
         <Route path='/pouvoirs' element={<ListePouvoirs />}></Route>
+        <Route path='/pouvoirs-print' element={<ListePouvoirsPrint />}></Route>
         <Route path='/sorts' element={<ListeSorts />}></Route>
       </Routes>
     </HashRouter>

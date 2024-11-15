@@ -18,7 +18,7 @@ export function SortIndividuel(data) {
                 <div className="col-3 col-xs-7">{!data.data.type_bonus ? "-" : data.data.type_bonus}</div>
             </div>
             <div className="row">
-                <div className="col-12 gridItemDesc">{!data.data.description ? "Description manquante" : data.data.description}</div>
+                <div className="col-12 item-desc">{!data.data.description ? "Description manquante" : data.data.description}</div>
             </div>
             <div className="row">
                 <div className="col-6 col-xs-4 bold">Activation</div>

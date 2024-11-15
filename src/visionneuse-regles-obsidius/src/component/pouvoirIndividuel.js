@@ -15,7 +15,7 @@ export function PouvoirIndividuel(data) {
                 <div className="col-4 col-xs-7 hidden-xs">{!data.data.type_bonus ? "-" : data.data.type_bonus}</div>
             </div>
             <div className="row">
-                <div className="col-12 gridItemDesc">{data.data.description}</div>
+                <div className="col-12 item-desc">{data.data.description}</div>
             </div>
             <div className="row hidden-desktop">
                 <div className="col-2 col-xs-5 bold">Type de bonus :</div>

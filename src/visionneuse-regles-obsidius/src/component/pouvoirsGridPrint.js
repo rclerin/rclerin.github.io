@@ -1,41 +1,41 @@
 import { useEffect, useState } from 'react';
-import { Link } from "react-router-dom";
-import { PouvoirsGridFormatter } from "./pouvoirsGridFormatter.js";
 import { getPouvoirsExclusifs, getPouvoirsUniversels, getPouvoirsParClasse } from "../services/jsonFetcher.js";
+import { PouvoirsGridFormatterPrint } from './pouvoirsGridFormatterPrint.js';
 
-const PouvoirsGrid = () => {
+const PouvoirsGridPrint = () => {
     const [gridData, setGridData] = useState([]);
     const [choixListe, setChoixListe] = useState("100");
-
-    const filterPouvoirs = (pouvoirsEntrants) => {
-        const filteredPouvoirs = pouvoirsEntrants.sort((a, b) => a.nom.toLowerCase() < b.nom.toLowerCase());
-        setGridData(filteredPouvoirs);
-    }
+    const [nomChoix, setNomChoix] = useState("Universels");
 
     const fetchPouvoirsUni = () => {
-        getPouvoirsUniversels().then(x => filterPouvoirs(x));
+        getPouvoirsUniversels().then(x => setGridData(x));
     }
 
     const fetchPouvoirsExclu = () => {
-        getPouvoirsExclusifs().then(x => filterPouvoirs(x));
+        getPouvoirsExclusifs().then(x => setGridData(x));
     }
 
     const fetchPouvoirsClasse = (classeId) => {
-        getPouvoirsParClasse(classeId).then(x => filterPouvoirs(x));
+        getPouvoirsParClasse(classeId).then(x => setGridData(x));
     }
 
     // Au chargement de la page
     useEffect(() => {
-        document.title = "Liste des pouvoirs";
+        document.title = "Liste des pouvoirs universels";
         fetchPouvoirsUni();
         // eslint-disable-next-line
     }, [])
-
 
     const handleSelectChange = (e) => {
         const value = e.target.value;
         setChoixListe(value);
         changerListes(e.target.value);
+        const target = e.target;
+        const text = target.options[target.selectedIndex].text.toLowerCase();
+        setNomChoix(text);
+
+        const stringTitre = "Liste des pouvoirs " + text;
+        document.title = stringTitre;
     };
 
     const changerListes = (choix) => {
@@ -54,8 +54,8 @@ const PouvoirsGrid = () => {
 
     return (
         <main>
-            <div className='choix-liste'>
-                <label>Choix de liste de pouvoirs:</label>
+            <div className='choix-liste hide-print'>
+                <label>Liste de pouvoirs:</label>
                 <select value={choixListe} onChange={handleSelectChange} name="liste-pouvoir-select">
                     <option value={100}>Universels</option>
                     <option value={101}>Exclusifs</option>
@@ -71,13 +71,11 @@ const PouvoirsGrid = () => {
                     <option value={12}>Voleur</option>
                     <option value={13}>Warlock</option>
                 </select>
-                <span style={{ margin: "0 1em" }}>
-                    <Link to={"/pouvoirs-print"} target="_blank">Imprimer</Link>
-                </span>
             </div>
-            <PouvoirsGridFormatter tableData={gridData} />
+            <div className='choix-liste hidden show-print'>Liste des pouvoirs {nomChoix} d'Obsidius</div>
+            <PouvoirsGridFormatterPrint tableData={gridData} />
         </main>
     );
 }
 
-export default PouvoirsGrid;
+export default PouvoirsGridPrint;
