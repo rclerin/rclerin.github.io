@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1px;
-    margin: 0 1em 2em;
+    margin: 0 1em 1.5em;
     border: 2px solid black;
     break-inside: avoid-page;
 }
@@ -30,6 +30,12 @@
     justify-content: center;
 }
 
+.header-print {
+    /* margin: 1em 0; */
+    text-align: center;
+    font-size: large;
+}
+
 .hidden {
     display: none;
 }
@@ -38,6 +44,7 @@
     .hide-print {
         display: none !important;
     }
+
     .show-print {
         display: block !important;
     }

@@ -72,7 +72,7 @@ const PouvoirsGridPrint = () => {
                     <option value={13}>Warlock</option>
                 </select>
             </div>
-            <div className='choix-liste hidden show-print'>Liste des pouvoirs {nomChoix} d'Obsidius</div>
+            <div className='header-print hidden show-print'><h2>Liste des pouvoirs {nomChoix} d'Obsidius</h2></div>
             <PouvoirsGridFormatterPrint tableData={gridData} />
         </main>
     );

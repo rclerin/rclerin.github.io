@@ -28,14 +28,14 @@ export function PouvoirIndividuelPrint(data) {
             <div className="gridItem" style={{ gridColumn: "3/4" }}>{!data.data.activation ? "-" : data.data.activation}</div>
             <div className="gridItem" style={{ gridColumn: "4/6" }}>{!data.data.defense ? "-" : data.data.defense}</div>
 
-            <div className="gridItem" style={{ gridColumn: "1/3" }}>Annulé par</div>
-            <div className="gridItem" style={{ gridColumn: "3/4" }}>Composante matérielle requise</div>
-            <div className="gridItem" style={{ gridColumn: "4/5" }}>Catégorie de pouvoir</div>
+            <div className="gridItem" style={{ gridColumn: "1/2" }}>Annulé par</div>
+            <div className="gridItem" style={{ gridColumn: "2/3" }}>Composante matérielle requise</div>
+            <div className="gridItem" style={{ gridColumn: "3/5" }}>Catégorie de pouvoir</div>
             <div className="gridItem" style={{ gridColumn: "5/6" }}>Répétition</div>
 
-            <div className="gridItem" style={{ gridColumn: "1/3" }}>{!data.data.annule_par ? "-" : data.data.annule_par}</div>
-            <div className="gridItem" style={{ gridColumn: "3/4" }}>{!data.data.materiel_requis ? "-" : (data.data.materiel_requis ? "oui" : "non")}</div>
-            <div className="gridItem" style={{ gridColumn: "4/5" }}>{!data.data.categorie ? "-" : data.data.categorie}</div>
+            <div className="gridItem" style={{ gridColumn: "1/2" }}>{!data.data.annule_par ? "-" : data.data.annule_par}</div>
+            <div className="gridItem" style={{ gridColumn: "2/3" }}>{!data.data.materiel_requis ? "-" : (data.data.materiel_requis ? "oui" : "non")}</div>
+            <div className="gridItem" style={{ gridColumn: "3/5" }}>{!data.data.categorie ? "-" : data.data.categorie}</div>
             <div className="gridItem" style={{ gridColumn: "5/6" }}>{data.data.repetition ? "oui" : "non"}</div>
 
             <div className="gridItem" style={{ gridColumn: "1/2" }}>Niveau 2</div>
